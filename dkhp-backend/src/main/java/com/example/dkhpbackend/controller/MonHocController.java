@@ -12,13 +12,13 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/monhoc")
 public class MonHocController {
-
+    // Tạo đối tượng MonHocService
     @Autowired
     private MonHocService monHocService;
 
     @GetMapping
-    public List<MonHoc> getAllMonHoc(){
-        return  monHocService.getAllMonHoc();
+    public List<MonHoc> getAllMonHoc() {
+        return monHocService.getAllMonHoc();
     }
 
     // Thêm môn học
